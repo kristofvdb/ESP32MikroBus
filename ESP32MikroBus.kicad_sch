@@ -11,126 +11,6 @@
 		(company "(C) Tecnova BV")
 	)
 	(lib_symbols
-		(symbol "+5V_3"
-			(power)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+5V_3"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+5V_3_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+5V_3_1_1"
-				(pin power_out line
-					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "435171014816:435171014816"
 			(pin_names
 				(offset 1.016)
@@ -1090,22 +970,22 @@
 				)
 			)
 		)
-		(symbol "Connector_Generic:Conn_01x06"
+		(symbol "Connector_Generic:Conn_01x08"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 0 7.62 0)
+				(at 0 10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Conn_01x06"
-				(at 0 -10.16 0)
+			(property "Value" "Conn_01x08"
+				(at 0 -12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1130,7 +1010,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1157,7 +1037,18 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x06_1_1"
+			(symbol "Conn_01x08_1_1"
+				(rectangle
+					(start -1.27 -10.033)
+					(end 0 -10.287)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(rectangle
 					(start -1.27 -7.493)
 					(end 0 -7.747)
@@ -1225,8 +1116,19 @@
 					)
 				)
 				(rectangle
-					(start -1.27 6.35)
-					(end 1.27 -8.89)
+					(start -1.27 7.747)
+					(end 0 7.493)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 8.89)
+					(end 1.27 -11.43)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1236,7 +1138,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 5.08 0)
+					(at -5.08 7.62 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -1254,7 +1156,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at -5.08 5.08 0)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -1272,7 +1174,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at -5.08 2.54 0)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -1290,7 +1192,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
@@ -1308,7 +1210,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -5.08 0)
+					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_5"
 						(effects
@@ -1326,7 +1228,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -7.62 0)
+					(at -5.08 -5.08 0)
 					(length 3.81)
 					(name "Pin_6"
 						(effects
@@ -1336,6 +1238,42 @@
 						)
 					)
 					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 0)
+					(length 3.81)
+					(name "Pin_7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -10.16 0)
+					(length 3.81)
+					(name "Pin_8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5083,6 +5021,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 88.9) (xy 121.92 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "127f9906-07e7-45d8-8361-fa638afba7f5")
+	)
+	(wire
+		(pts
 			(xy 115.57 33.02) (xy 133.35 33.02)
 		)
 		(stroke
@@ -5503,6 +5451,16 @@
 	)
 	(wire
 		(pts
+			(xy 201.93 39.37) (xy 194.31 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fd23943-8de6-4fb4-a111-1f3b46164f75")
+	)
+	(wire
+		(pts
 			(xy 109.22 124.46) (xy 109.22 133.35)
 		)
 		(stroke
@@ -5630,6 +5588,16 @@
 			(type default)
 		)
 		(uuid "7242689f-0508-4d32-9dba-d095b2ca1225")
+	)
+	(wire
+		(pts
+			(xy 121.92 88.9) (xy 121.92 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "730c6b69-96b7-42c4-8cfd-05d8331b873b")
 	)
 	(wire
 		(pts
@@ -5793,6 +5761,16 @@
 	)
 	(wire
 		(pts
+			(xy 194.31 39.37) (xy 194.31 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94c96638-43c3-4950-a087-d8dea1d0b252")
+	)
+	(wire
+		(pts
 			(xy 66.04 76.2) (xy 82.55 76.2)
 		)
 		(stroke
@@ -5830,6 +5808,16 @@
 			(type default)
 		)
 		(uuid "9dfcaa3e-6b5c-4949-a753-a6c7d3f16ef8")
+	)
+	(wire
+		(pts
+			(xy 127 106.68) (xy 121.92 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e42172f-1c8b-4b7c-a5c6-fdce87ebc335")
 	)
 	(wire
 		(pts
@@ -5930,6 +5918,16 @@
 			(type default)
 		)
 		(uuid "a9846628-d796-4205-af8a-94659d279570")
+	)
+	(wire
+		(pts
+			(xy 121.92 106.68) (xy 121.92 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aba3a072-98a8-43f9-8d80-d50daa8c5281")
 	)
 	(wire
 		(pts
@@ -6070,16 +6068,6 @@
 			(type default)
 		)
 		(uuid "c09c3a04-8ac5-430f-96c6-da58d2c2d34c")
-	)
-	(wire
-		(pts
-			(xy 198.12 36.83) (xy 198.12 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c1422c04-2785-4428-bd40-e3ecc76b983e")
 	)
 	(wire
 		(pts
@@ -6380,16 +6368,6 @@
 			(type default)
 		)
 		(uuid "f59fbf4d-4a48-4fd3-9017-bb6352a1e7b9")
-	)
-	(wire
-		(pts
-			(xy 198.12 39.37) (xy 201.93 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f71b127d-72c1-4a9e-b4e2-4a7bb0547cde")
 	)
 	(wire
 		(pts
@@ -7204,6 +7182,72 @@
 			(project "ESP32MikroBus"
 				(path "/f1f042be-b4a8-4475-a6e6-c08e6b440fbe"
 					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 194.31 38.1 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "08f47aea-59ff-4640-a608-a45a212e73a2")
+		(property "Reference" "#PWR02"
+			(at 194.31 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+VBUS"
+			(at 194.056 32.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.31 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.31 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 194.31 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0340e0d3-099e-4048-8f36-4d06d89c9972")
+		)
+		(instances
+			(project "ESP32MikroBus"
+				(path "/f1f042be-b4a8-4475-a6e6-c08e6b440fbe"
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -9613,6 +9657,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x08")
+		(at 132.08 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7117882f-5728-45c0-9ee0-eb4eec253ff3")
+		(property "Reference" "J4"
+			(at 134.62 96.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x08"
+			(at 134.62 99.0599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x08_P1.27mm_Vertical"
+			(at 132.08 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 132.08 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 132.08 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "4a043622-1626-405d-8ad4-4dceb31641ff")
+		)
+		(pin "5"
+			(uuid "9a81c8e3-e80f-4a4f-8a79-71b28e976b77")
+		)
+		(pin "2"
+			(uuid "27e79a09-4f32-4a37-b4a9-cf27ca74703c")
+		)
+		(pin "1"
+			(uuid "a41c106d-1f98-41cd-8980-adfff3c83ebe")
+		)
+		(pin "7"
+			(uuid "8636c155-15eb-4775-a0ef-707e55ae693c")
+		)
+		(pin "3"
+			(uuid "7f2e1034-a15b-4107-90fe-3cfabfd42e82")
+		)
+		(pin "4"
+			(uuid "f3dac8d1-767e-4376-b8ab-2fed102b2415")
+		)
+		(pin "8"
+			(uuid "c44aba10-a400-4ebf-9863-298a7caf09e7")
+		)
+		(instances
+			(project ""
+				(path "/f1f042be-b4a8-4475-a6e6-c08e6b440fbe"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 236.22 80.01 90)
 		(unit 1)
@@ -10672,35 +10804,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x06")
-		(at 132.08 96.52 0)
+		(lib_id "power:GND")
+		(at 121.92 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ad7823c2-fd12-42b7-8612-8cc9555f3e7b")
-		(property "Reference" "J4"
-			(at 134.62 96.5199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x06"
-			(at 134.62 99.0599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x06_P1.27mm_Vertical"
-			(at 132.08 96.52 0)
+		(uuid "af86ee55-ac51-4204-ad0d-007aa8d2f12d")
+		(property "Reference" "#PWR05"
+			(at 121.92 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10708,8 +10821,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 132.08 96.52 0)
+		(property "Value" "GND"
+			(at 212.09 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10717,8 +10830,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 132.08 96.52 0)
+		(property "Footprint" ""
+			(at 121.92 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10726,28 +10839,31 @@
 				(hide yes)
 			)
 		)
-		(pin "6"
-			(uuid "f57030f7-b3fa-46f9-9cb7-eb99f9055007")
+		(property "Datasheet" ""
+			(at 121.92 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 121.92 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "4f4afb21-4095-427b-a6b3-7d4e8623b0b0")
-		)
-		(pin "4"
-			(uuid "fc3a1193-5fd5-42ac-ae2b-82200020ad35")
-		)
-		(pin "2"
-			(uuid "bddbc498-9198-4db1-8ccd-27740c6228f0")
-		)
-		(pin "3"
-			(uuid "9aa9eb38-699a-4334-a7d1-aed623f85af2")
-		)
-		(pin "5"
-			(uuid "61829eaa-988b-4002-adea-99fa0d24d904")
+			(uuid "9e38694d-8f08-42a9-938a-4bed5b5c0684")
 		)
 		(instances
-			(project ""
+			(project "ESP32MikroBus"
 				(path "/f1f042be-b4a8-4475-a6e6-c08e6b440fbe"
-					(reference "J4")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -11761,6 +11877,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 121.92 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fbd5ebb8-3bbe-4c28-9842-d85977b553f6")
+		(property "Reference" "#PWR029"
+			(at 121.92 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 121.92 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 121.92 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a256b0a5-ab6c-4adb-8b9a-1e87f70e13ef")
+		)
+		(instances
+			(project "ESP32MikroBus"
+				(path "/f1f042be-b4a8-4475-a6e6-c08e6b440fbe"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 109.22 149.86 0)
 		(unit 1)
@@ -11821,72 +12003,6 @@
 			(project "ESP32MikroBus"
 				(path "/f1f042be-b4a8-4475-a6e6-c08e6b440fbe"
 					(reference "#PWR024")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "+5V_3")
-		(lib_id "power:+5V")
-		(at 198.12 36.83 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fd64417c-8a58-4831-8cda-6ab958e5b807")
-		(property "Reference" "#PWR05"
-			(at 198.12 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 198.12 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 198.12 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 198.12 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 198.12 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "12f43c59-40ea-4acd-b932-959e214c327d")
-		)
-		(instances
-			(project "ESP32MikroBus"
-				(path "/f1f042be-b4a8-4475-a6e6-c08e6b440fbe"
-					(reference "#PWR05")
 					(unit 1)
 				)
 			)
